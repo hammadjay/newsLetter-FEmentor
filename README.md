@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/hammadjay/newsLetter-FEmentor](https://github.com/hammadjay/newsLetter-FEmentor)
+- Live Site URL: [https://news-letter-f-ementor.vercel.app/](https://news-letter-f-ementor.vercel.app/)
 
 ## My process
 
