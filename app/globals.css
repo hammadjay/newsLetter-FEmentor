@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --grey: hsl(231, 7%, 60%);
+  --primary-tomato: hsl(4, 100%, 67%);
+  --primary-tomato-light: hsla(4, 100%, 67%, 0.2);
+  --primary-reddish: hsl(354, 100%, 67%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +20,34 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--charcoal-grey);
+}
+
+.illustration {
+  background-image: url('assets/illustration-sign-up-desktop.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:100%;
+
+}
+.illustration-mobile {
+  background-image: url('assets/illustration-sign-up-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.success-icon {
+  background-image: url('assets/icon-success.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.errorInput{
+  background-color: var(--primary-tomato-light);
+  color: var(--primary-tomato);
+  border: 1px solid var(--primary-tomato);
+}
+.errorInput:focus{
+  outline-color: var(--primary-tomato);
 }
